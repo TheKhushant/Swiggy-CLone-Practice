@@ -1,16 +1,13 @@
 import React from 'react'
-// import { connect } from 'react-redux'
-// rfx
-export const Header = (props) => {
+// rfc 
+export default function Header() {
   return (
-    <header className='p-3'>
-
-    </header>
+      <header className='p-[15px] shadow-xl'>
+          <div className='max-w-[1200px] mx-auto border border-red-500'>
+              <div className='w-[80px] h-[80px] border border-blue-500'>
+                  <img src="images/logo.png" className='w-full h-full object-cover' alt="not" />
+              </div>
+          </div>
+      </header>
   )
 }
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
