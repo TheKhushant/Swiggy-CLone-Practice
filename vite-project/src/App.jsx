@@ -1,5 +1,6 @@
 import Header from "./component/Header";
 import Category from "./component/Category";
+import TopRest from "./component/TopRest";
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -12,6 +13,7 @@ function App() {
     <>
       <Header/>
       <Category/>
+      <TopRest/>
     </>
   )
 }
