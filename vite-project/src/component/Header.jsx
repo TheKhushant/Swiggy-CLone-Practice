@@ -68,7 +68,7 @@ export default function Header() {
               <div className=''>
               <span className=' font-bold border-b-[3px] border-[black]'>Nagpur,</span> Maharashtra, India <RxCaretDown onClick={showSideMenu} fontSize={25} className='inline text-[#fc8019] cursor-pointer'/>
               </div>
-              <nav className='flex  gap-5 ml-auto list-none text-[18px] font-semibold'>
+              <nav className='hidden md:flex  gap-5 ml-auto list-none text-[18px] font-semibold'>
                 {/* showing data from array object (using Loop) */}
                 {
                   // {/* in loop/while rendering react ko samjane ke liye ki kon kis chij ko represent krra hai ! to remove this confusion we use ___Key={index}____ to identify every element uniquely*/}
