@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card(props) {
   return (
-    <div className='w-[273px] shrink-0 grow mb-3'>
+    <div className='w-[273px] shrink-0 grow'>
         <div className='h-[182px] overflow-hidden rounded-[15px] relative'>
             <img className='object-cover w-full h-full' src={"http://localhost:5000/images/"+props.image}  alt="nat geo" />
         
