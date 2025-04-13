@@ -50,7 +50,8 @@ export default function Header() {
     <> {/* react segment : every thing must be raped in a single parent || but agar aap koi section nahi lagana chahte to koi ek empty tag laga do , mai usse bhi thik hu !!*/}
         <div onClick={hideSideMenu} className='black-overlay w-full h-full fixed duration-500' style={{
           opacity: toggle ? 1 : 0,
-          visibility: toggle ? "visible" : "hidden"
+          visibility: toggle ? "visible" : "hidden",
+          zIndex: 999999
         }}>
           <div onClick={(e)=>{
             e.stopPropagation();
