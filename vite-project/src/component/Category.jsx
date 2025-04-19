@@ -6,7 +6,7 @@ export default function Category() {
     const [slide, setSlide] = useState([]);
     const [categories, setCategory] = useState([0]);
     const fetchCategory =async () => {
-        const response = await fetch("https://sensational-manatee-a6fac0.netlify.app/categories");
+        const response = await fetch("https://swiggy-api-molm.onrender.com/categories");
         const data = await response.json();
         setCategory(data);
     }

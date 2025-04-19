@@ -6,7 +6,7 @@ export default function TopRest() {
     const [data,setData] = useState([]);
     
     const fetchTopRestaurant = async () => {
-        const response = await fetch('https://sensational-manatee-a6fac0.netlify.app/top-restaurant-chains');
+        const response = await fetch('https://swiggy-api-molm.onrender.com/top-restaurant-chains');
         const apiData = await response.json();
         setData(apiData);
     }
