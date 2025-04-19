@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <div className={`${props.width} shrink-0 mb-3`}>
         <div className='h-[182px] overflow-hidden rounded-[15px] relative'>
-            <img className='group-hover:scale-110 duration-150 object-cover w-full h-full' src={"http://localhost:5000/images/"+props.image}  alt="nat geo" />
+            <img className='group-hover:scale-110 duration-150 object-cover w-full h-full' src={"https://sensational-manatee-a6fac0.netlify.app/images/"+props.image}  alt="nat geo" />
         
 
         <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[16px] md:text-[25px] text-white font-bold tracking-tighter '>
