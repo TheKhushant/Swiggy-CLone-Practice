@@ -20,7 +20,7 @@ export default function OnlineDelivery() {
     }, []);
         // const [categories, setCategory] = useState([0]);
         const fetchTopRestaurant =async () => {
-            const response = await fetch("http://localhost:5000/top-restaurant-chains");
+            const response = await fetch("https://sensational-manatee-a6fac0.netlify.app//top-restaurant-chains");
             const apiData = await response.json();
             // const data = await response.json();
             setData(apiData);
