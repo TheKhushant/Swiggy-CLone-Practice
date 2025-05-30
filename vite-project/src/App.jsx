@@ -1,23 +1,22 @@
+import { useState } from 'react';
 import Header from "./component/Header";
 import Category from "./component/Category";
 import TopRest from "./component/TopRest";
 import OnlineDelivery from "./component/OnlineDelivery";
-
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import Loader from "./component/Loader";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [loading, setLoading] = useState(true);
 
   return (
     <>
-      <Header/>
-      <Category/>
-      <TopRest/>
-      <OnlineDelivery/>
+      {loading && <Loader />}
+      <Header />
+      <Category setLoading={setLoading} />
+      <TopRest />
+      <OnlineDelivery />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

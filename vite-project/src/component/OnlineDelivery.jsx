@@ -30,7 +30,7 @@ export default function OnlineDelivery() {
                 fetchTopRestaurant();
             },[] 
         )
-        console.log("fetched data : ",data);
+        // console.log("fetched data : ",data);
     return (
     <div className='max-w-[1200px] mx-auto' ref={targetRef}>
         <div className='flex my-5 items-center justify-between'>
