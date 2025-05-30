@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 
 export default function Category({ setLoading }) {
-    const [slide, setSlide] = useState([]);
-    const [categories, setCategory] = useState([0]);
+    const [slide, setSlide] = useState(0);
+    const [categories, setCategory] = useState([]);
 
     const fetchCategory = async () => {
         try {
@@ -26,11 +26,11 @@ export default function Category({ setLoading }) {
         }, []
     )
     const nextSlide = () => {
-        if (categories.length - 8 == slide) return false;
+        if (slide >= categories.length - 8) return;
         setSlide(slide + 3);
     }
     const prevSlide = () => {
-        if (0 == slide) return false;
+        if (slide <= 0) return;
         setSlide(slide - 3);
     }
 
