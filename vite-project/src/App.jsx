@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Header from "./component/Header";
 import Category from "./component/Category";
-import TopRest from "./component/TopRest";
-import OnlineDelivery from "./component/OnlineDelivery";
+import CategorySlider from './pages/CategorySlider';
+import TopRest from "./pages/TopRest";
+import OnlineDelivery from "./pages/OnlineDelivery";
 import Loader from "./component/Loader";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       {loading && <Loader />}
       <Header />
       <Category setLoading={setLoading} />
+      <CategorySlider/>
       <TopRest />
       <OnlineDelivery />
     </>

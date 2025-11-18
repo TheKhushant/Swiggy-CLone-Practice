@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import Card from './Card';
+import Card from '../component/Card';
 
 export default function OnlineDelivery() {
     const [data, setData] = useState([]);
