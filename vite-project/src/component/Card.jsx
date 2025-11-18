@@ -26,7 +26,7 @@ export default function Card(props) {
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className={`${width} shrink-0 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 mb-3 ${className}`}
+      className={`${width} shrink-0 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 mb-3 h-80 ${className}`}
     >
       {/* Image */}
       <div className="relative h-[182px] overflow-hidden rounded-[15px]">
@@ -54,11 +54,11 @@ export default function Card(props) {
       </div>
 
       {/* Text Content */}
-      <div className="mt-3 px-1">
+      <div className="mt-3 px-1 ml-3">
         <div className="text-md md:text-xl font-bold">{title}</div>
 
         <div className="flex items-center mt-1">
-          <Start className="inline mr-1" /> {rating}
+          <Start className="inline mr-2" /> {rating}
           <span className="ml-2">
             {minTime} - {maxTime}
           </span>
